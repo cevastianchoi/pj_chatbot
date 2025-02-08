@@ -1,8 +1,8 @@
 import google.generativeai as genai
 import streamlit as st
 
-api_key = st.secrets["chatbot_key"]
-genai.configure(api_key)
+chatbot_key = st.secrets["chatbot_key"]
+genai.configure(api_key=chatbot_key)
 
 st.title("Turtle Gym chatbot")
 
